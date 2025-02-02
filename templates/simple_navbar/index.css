@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "New Amsterdam", serif;
+}
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", serif;
+    font-family: "Poppins", serif;
+}
+
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;  /* Space between logo, links, and profile */
+    align-items: center;             /* Vertically center items */
+    background-color: #2C3E50;
+    padding: 15px 30px;
+    color: white;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Links in the Center */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;                       /* Space between links */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1ABC9C;                  /* Hover effect */
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;              /* Makes the image round */
+    object-fit: cover;
+    border: 2px solid #1ABC9C;
+}
+
+.username {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;               /* Hide links on smaller screens */
+    }
+
+    .navbar {
+        justify-content: space-around;
+    }
+}
